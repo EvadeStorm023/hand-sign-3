@@ -1,0 +1,83 @@
+ 
+<html>
+  <head>
+    <title>Hand signs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body background="https://image.shutterstock.com/image-vector/emotion-feedback-scale-includes-such-260nw-1199282953.jpg">
+  <div class="container">
+  
+    <center>
+  <h1>Hand sign recognition
+    <br>
+    &#9994 &#9995 &#9996 &#9997 &#128070
+  </h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate a hand sign:
+        These are the hand signs you may try.
+      	<br>
+        <b >&#128076</b>
+        <br>
+        <b>&#9996</b>
+        <br>
+        <b >&#9995</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label id="view">Webcam View </label>
+        <br>
+        <div id="camera"></div>
+        <br>
+        <button id="button_cap" class="btn btn-warning" onclick="snap_img()">Capture Image</button>
+
+        <br><br>
+
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label class="btn btn-success" id="pre_1">Prediction 1</label> 
+        <br>
+        <label id="ename1"></label>
+        <br>
+        <label id="emname1"></label>
+        <br>
+
+        <label class="btn btn-success" id="pre_2">Prediction 2</label> 
+        <br>
+        <label id="ename2"></label>
+        <br>
+        <label id="emname2"></label>
+        <br>
+        
+
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label id="snap">Snapshot </label>
+        <br>
+        <div id="result"></div>
+        <br>
+        <button id="buttonshow_r" class="btn btn-warning" onclick="snap_img()">Show result</button>
+
+        <br><br>
+
+      </div>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
